@@ -9,7 +9,7 @@ class InvalidValueException extends Exception {
 
     // переопределение конструктора исключения
     public function __construct($invalidValue, $message, Throwable $previous = null) {
-        $exceptionMessage = "airport code '". $invalidValue ."' is invalid: ".$message;
+        $exceptionMessage = "country value '". $invalidValue ."' is invalid: ".$message;
         // вызов конструктора базового класса исключения
         parent::__construct(
             message: $exceptionMessage, 

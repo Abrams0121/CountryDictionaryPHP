@@ -9,7 +9,7 @@ class InvalidISOCodeException extends Exception {
 
     // переопределение конструктора исключения
     public function __construct($invalidCode, $message, Throwable $previous = null) {
-        $exceptionMessage = "airport code '". $invalidCode ."' is invalid: ".$message;
+        $exceptionMessage = "country code '". $invalidCode ."' is invalid: ".$message;
         // вызов конструктора базового класса исключения
         parent::__construct(
             message: $exceptionMessage, 
